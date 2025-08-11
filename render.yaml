@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: miguel-render-2
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "3001"
+      - key: PING_URL
+        value: ""  # deixe vazio para usar RENDER_EXTERNAL_URL/health automaticamente

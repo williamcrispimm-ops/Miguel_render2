@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  miguel-render-2:
+    build: .
+    environment:
+      - PORT=3001
+      - PING_URL=${PING_URL}
+    ports:
+      - "3001:3001"
