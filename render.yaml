@@ -1,4 +1,0 @@
-services:
-  - type: web
-    name: miguel-render-bloco2
-    env: node
